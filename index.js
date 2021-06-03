@@ -29,4 +29,7 @@ client.connect((err) => {
   });
   console.log("database connected");
 });
+app.get("./", (req, res) => {
+  res.send("hi, you are working");
+});
 app.listen(process.env.PORT || 5000);
